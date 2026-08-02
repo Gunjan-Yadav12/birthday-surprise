@@ -84,7 +84,7 @@ transition={{
   );
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none bg-gradient-to-br from-[#3B000A] via-[#8B0020] to-[#E6395A]">
+    <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none bg-gradient-to-br from-[#3B000A] via-[#8B0020] to-[#E6395A]">
 
       {/* Soft Glow Effects */}
       <div className="absolute top-0 left-0 w-96 h-96 rounded-full bg-pink-500/20 blur-3xl" />

@@ -102,11 +102,8 @@ export default function Cake() {
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                delay: 3.2,
-                duration: 0.8,
-              }}
-             className="absolute bottom-0 text-center"
+              transition={{ delay: 3.2, duration: 0.8 }}
+              className="mt-6 text-center"
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-[#FFC0CB] drop-shadow-lg">
                 🎂 Make A Wish 🎂

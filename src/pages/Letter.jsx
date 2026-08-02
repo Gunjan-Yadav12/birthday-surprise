@@ -53,11 +53,7 @@ You’re the reason behind my random silly smiles, the one who comforts me when 
 
 I’ll always care for you, even if I don’t always express it in words. I’ll make sure you always feel loved.
 
-No matter what happens or who stays or leaves, I’ll always love you, care for you, support you, and stand by your side.
-
 Everyone will be there during your highs, but I promise to be there during your lows too, because that's when you need someone the most.
-
-Mujhe nahi pata future ka kya hoga, but whether we stay together forever or our paths someday become different, you'll always have a place in my heart. Always. ❤️
 
 Thank you for being you.
 Thank you for existing.

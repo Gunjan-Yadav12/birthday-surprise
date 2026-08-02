@@ -68,7 +68,7 @@ export default function Landing() {
                   Happy Birthday
                 </h1>
 
-                <p className="font-script text-4xl text-blue-500 mt-4 mb-6">
+                <p className="font-script text-4xl text-[#FFDAB9] mt-4 mb-6">
                   {BIRTHDAY.nickname}
                 </p>
 

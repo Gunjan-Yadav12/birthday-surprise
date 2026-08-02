@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(
+    135deg,
+    #3B000A 0%,
+    #8B0020 50%,
+    #E6395A 100%
+  );
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff5f7;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #4a0010;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff5c7c;
+  border-radius: 8px;
+}
+
+/* Respect reduced-motion preference: strip non-essential animation */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 143, 163, 0.35);
+}
+.text-gold-gradient {
+  background: linear-gradient(
+    120deg,
+    #ffd1dc 0%,
+    #ff8fa3 40%,
+    #ffffff 50%,
+    #ff8fa3 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

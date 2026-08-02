@@ -106,7 +106,7 @@ export default function Cake() {
                 delay: 3.2,
                 duration: 0.8,
               }}
-              className="absolute -bottom-8 text-center"
+              className="absolute -bottom-15 text-center"
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-[#FFC0CB] drop-shadow-lg">
                 🎂 Make A Wish 🎂

@@ -49,7 +49,7 @@ export default function FinalSurprise() {
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
 
         <h1 className="mb-6 text-6xl font-bold">
-          Happy Birthday Naman "Te amo" ❤️
+          Happy Birthday Beeech "Te amo" ❤️
         </h1>
 
         <p className="max-w-2xl text-xl leading-relaxed">

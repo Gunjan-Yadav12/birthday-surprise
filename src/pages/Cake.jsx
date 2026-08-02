@@ -108,8 +108,8 @@ export default function Cake() {
               }}
               className="absolute -bottom-20 text-center"
             >
-              <h2 className="text-3xl font-bold text-white">
-                🎂Make A Wish🎂
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#FFC0CB] drop-shadow-lg">
+                🎂 Make A Wish 🎂
               </h2>
             </motion.div>
 

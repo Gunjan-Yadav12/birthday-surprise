@@ -52,7 +52,7 @@ export default function ChooseSurprise() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
           whileHover={{ scale: 1.05 }}
-          className="font-script text-3xl text-blue-500 mt-16 hover:text-gold-400 transition-colors"
+          className="font-script text-3xl text-[#FFDAB9] mt-16 hover:text-gold-400 transition-colors"
         >
           Final Surprise ❤️
         </motion.button>

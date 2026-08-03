@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useMusic } from "../context/MusicContext";
 import { motion, AnimatePresence } from "framer-motion";
 
 import PageTransition from "../components/PageTransition";
@@ -10,39 +9,33 @@ import { BIRTHDAY, UNLOCK_KEY } from "../utils/constants";
 export default function Landing() {
   const navigate = useNavigate();
   const { fireworks, burstConfetti } = useConfetti();
-  const { playMusic, isPlaying } = useMusic();
 
   const [input, setInput] = useState("");
   const [isWrong, setIsWrong] = useState(false);
   const [phase, setPhase] = useState("form");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+      e.preventDefault();
 
-    if (input.trim() === BIRTHDAY.password) {
-      // Start music after user interaction
-      if (!isPlaying) {
-        playMusic();
+      if (input.trim() === BIRTHDAY.password) {
+        setIsWrong(false);
+        setPhase("blackout");
+        sessionStorage.setItem(UNLOCK_KEY, "true");
+
+        setTimeout(() => {
+          setPhase("reveal");
+          fireworks();
+          burstConfetti();
+        }, 1000);
+
+        setTimeout(() => {
+          navigate("/excited");
+        }, 4200);
+      } else {
+        setIsWrong(true);
+        setTimeout(() => setIsWrong(false), 600);
       }
-
-      setIsWrong(false);
-      setPhase("blackout");
-      sessionStorage.setItem(UNLOCK_KEY, "true");
-
-      setTimeout(() => {
-        setPhase("reveal");
-        fireworks();
-        burstConfetti();
-      }, 1000);
-
-      setTimeout(() => {
-        navigate("/excited");
-      }, 4200);
-    } else {
-      setIsWrong(true);
-      setTimeout(() => setIsWrong(false), 600);
-    }
-  };
+    };
 
   return (
     <>

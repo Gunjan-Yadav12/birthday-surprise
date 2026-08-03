@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import PageTransition from "../components/PageTransition";
+import { useEffect } from "react";
+import { useMusic } from "../context/MusicContext";
 
+import PageTransition from "../components/PageTransition";
 import MusicToggle from "../components/MusicToggle";
 
 const CARDS = [
@@ -12,14 +14,21 @@ const CARDS = [
 
 export default function ChooseSurprise() {
   const navigate = useNavigate();
+  const { playMusic, isPlaying } = useMusic();
+
+  useEffect(() => {
+    if (!isPlaying) {
+      playMusic();
+    }
+  }, []);
 
   return (
     <>
-    
       <MusicToggle />
-      <PageTransition>
 
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 py-16">
+      <PageTransition>
+        <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 py-16">
+          {/* baaki code same rahega */}
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -53,7 +53,7 @@ export default function Excited() {
           <motion.button
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.94 }}
-            onClick={handleNo}
+            onClick={() => navigate("/notexcited")}
             className="px-8 py-3 rounded-full glass text-gold-300 font-semibold"
           >
             NO 😒

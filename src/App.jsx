@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import NotExcited from "./pages/NotExcited";
 import { AnimatePresence } from "framer-motion";
 import { MusicProvider } from "./context/MusicContext";
 import RequireUnlock from "./components/RequireUnlock";
@@ -68,6 +69,14 @@ function AnimatedRoutes() {
           element={
             <RequireUnlock>
               <FinalSurprise />
+            </RequireUnlock>
+          }
+        />
+        <Route
+          path="/notexcited"
+          element={
+            <RequireUnlock>
+              <NotExcited />
             </RequireUnlock>
           }
         />

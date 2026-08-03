@@ -53,7 +53,7 @@ export default function FinalSurprise() {
         </h1>
 
         <p className="max-w-2xl text-xl leading-relaxed">
-          You are the most beautiful surprise that ever happened in my life.
+          "Chal abb waffle khila shanti se ek din ke liye cheat day kar lungi mai"
         </p>
 
       </div>
